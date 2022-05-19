@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* ESTILIZANDO A NAVEGAÇÃO */
+  nav {
+    position: fixed;
+    inset: 0;
+    height: 70px;
+    display: flex;
+    
+    background: #f8f8f8;
+    box-shadow: 0px 4px 40px -15px rgba(0, 0, 0, 0.25);
+    align-items: center;
+
+
+  }
+
+  nav h1 {
+      margin-left: 180px;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 195px;
+  }
+
+  nav li {
+      margin-left: 15px ;
+      list-style: none;
+      text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #242424;
+  }
+
+  #linkNegrito{
+      color: #292929;
+      font-weight: bold;
+  }
+  
+
+  /* INICIO DA ESTILIZAÇÃO DA TAG MAIN E SUAS PROPRIEDADES*/
+
+  main { 
+    margin-top: 100px;
+    margin-left: 115px ;
+    margin-right: 142px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+  }
+
+  .containerItens {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .listaItens {
+    margin: 22px;
+    width: 296px;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+  }
+.containerItens li:hover{
+    border: 2px solid #37268C;
+    
+}
+
+  li img {
+      width: 100%;
+  }
+
+    .caixaItem{
+    margin: 0 auto;
+    padding: 5px;
+    width: 97%;
+    background-color: white;
+    margin-bottom: 4px;
+    }
+
+a:hover{
+    color: #2E245E;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+  .categoria {
+      background-color:#2E245E ;
+      color: white;
+      width: 95px;
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10px;
+      padding: 4px;
+      margin-left: 10px ;
+  }
+
+  h3 {
+      margin-left: 10px;
+      margin-top: 10px;
+  }
+
+  .descricao {
+      font-size: 12px;
+      margin-top: 15px;
+      margin-left: 10px;
+  }
+
+  .preco {
+      margin-top: 15px;
+      color: #2E245E;
+      font-weight: 600;
+      margin-left: 10px;
+  }
+
+  li a {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+/*INICIANDO ESTILIZAÇÃO DO ASIDE OU CARRINHO DE COMPRAS*/
+
+aside {
+  margin-right: 50px;
+  max-height: 450px;
+}
+
+.pesquisa {
+    margin-left: 80px;
+}
+
+
+
+.pesquisa input {
+    padding: 15px;
+    border: none;
+    background-color:#F5F5F5 ;
+}
+
+.pesquisa button {
+    width: 130px;
+    margin-left: 10px;
+    padding: 15px;
+    color: white;
+    background-color: #37268C;
+    border: none;
+}
+
+.pesquisa button:hover{
+  cursor: pointer;
+}
+
+#carrinho {
+    margin-top: 23px;
+    text-align: center;
+    width: 337px;
+    padding: 15px;
+    color: white;
+    background-color: #37268C;
+    border: none;
+    margin-left: 80px;
+}
+
+.caixaCarrinho {
+    margin-left: 80px;
+    width: 337px;
+    background-color:#F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 350px;
+}
+
+/*AJUSTANDO O DESIGN DO CARRINHO DE COMPRAS COM PRODUTOS DENTRO*/
+
+.divCarrinho{
+  margin-left: 80px;
+  width: 337px;
+  background-color: #3c3b3b;
+  color: #F5F5F5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.liCarrinho {
+  list-style: none;
+}
+
+.ulCaixaCarrinho{
+  width: 80%;
+  overflow: auto;
+}
